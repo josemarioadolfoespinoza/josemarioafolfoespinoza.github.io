@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="ico.png" type="../imagen/ico.png" />
+	<title>Calculo Deterioro BRP</title>
+</head>
+<body>
+  <ul>
+    <li class="active"> <a href="index.html">Inicio</a></li>
+    <li> <a href="metodologia.html">Metodologia</a></li>
+    <li> <a href="formulas.html">Formulas</a></li>
+    <li> <a href="resultados.html">Codigo</a></li>
+  </ul>
+
+	<h1>Plantilla de calculo Deterioro BRP</h1>
+	<h2>Registro de datos del BRP</h2>
+
+	<div class="datos" >
+
+  <label>Fecha del Calculo:</label>
+  <input type="Date" id="fechaCalculo" placeholder="Fecha" />
+
+	<label>Nombre del BRP:</label>
+	<input type="text" id="nombreBrp" placeholder="Nombre del BRP" />
+
+	<label>Valor actual en libros:</label>
+	<input type="number" id="valorLibros" placeholder="Valor en libros" />
+
+  <label>Valor Avaluo:</label>
+	<input type="number" id="valorAvaluo" placeholder="Valor avaluo" />
+
+	<label>Tasa descuento %  CP:</label>
+	<input type="number" id="tasaCP" placeholder="Tasa % corto plazo"/>
+
+	<label>Tasa descuento %  LP:</label>
+	<input type="number" id="tasaLP"  placeholder="Tasa % largo plazo"/>
+
+	<label>Tasa de recuperacion %:</label>
+	<input type="number" id="tasaRecuperacion" placeholder="Tasa % historica recuparacion"/>
+
+	<label>Plazo de venta:</label>
+	<input type="number" id="plazoVenta" placeholder="Periodo historico recuperacion" />
+
+	<label>Gatos de venta:</label>
+	<input type="number" id="gastoVenta" placeholder="Gastos predefinidos"/>
+
+  <button  type="submit" id="calcular" button>Calcular</button>
+	</div>
+
+  <div class="container">
+    <h2>Deterioro de otros activos (BRP`S)</h2>
+    <table class="table table-hover" id="brpTable">
+    <thead>
+      <tr>
+        <th>Fecha de Calculo</th>
+        <th>Nombre BRP</th>
+        <th>Valor libros</th>
+        <th>Valor Avaluo</th>
+        <th>Tasa % LP</th>
+        <th>Tasa % Recuperacion</th>
+        <th>Plazo de Venta</th>
+        <th>Gasto de Venta</th>
+        <th>Seleccionar</th>
+        <th>Valor Recuperable</th>
+        <th>Valor Recuperable 1</th>
+        <th>VP paso 1</th>
+        <th>exponenciarVR</th>
+        <th>vpRecuperable</th>
+        <th>vpGastos</th>
+        <th>vpNeto</th>
+
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    </table>
+  </div>
+
+
+<script src="businessLogic.js"></script>
+<script src="logic1.js"></script>
+
+</body>
+</html>

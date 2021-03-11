@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 80%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+li {
+  float: left; //o se puede usar displa inline
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+h1 {
+  margin-top: 4rem;
+  margin-left: 1rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+  font-style: normal;
+  color: #4CAF50
+}
+
+label {
+  margin-left: 1rem;
+  padding: 5px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+button {
+  width: 15%;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+table {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    background-color: white;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  td{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+
+  table th{
+    background-color: #4CAF50;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  tbody {
+      font-family: monospace;
+    }

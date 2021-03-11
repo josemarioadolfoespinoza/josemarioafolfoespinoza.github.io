@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style2.css" />
+	<title>Calculo Deterioro BRP</title>
+</head>
+<body>
+  <ul>
+    <li> <a href="index.html">Inicio</a></li>
+    <li> <a href="metodologia.html">Metodologia</a></li>
+		<li> <a href="formulas.html">Formulas</a></li>
+		<li class="active"> <a href="resultados.html">Codigo</a></li>
+  </ul>
+
+  <h1>Plantilla de calculo Deterioro BRP</h1>
+  <h2>Codigo Fuente</h2>
+  <h3>Programa de calculo BRP´s</h3>
+
+  <div>
+  <p><b>Let valorRecuperable </b> = <em> valorAvaluo * tasaRecuperacion </em> </p>
+  <p><b>Let valorRecuperable1 </b> = <em> parseFloat(valorRecuperable);</em> </p>
+  <p><b>Let vpPaso1 </b> =  <em> 1 + tasaLP </p>
+  <p><b>Let exponenciarVR </b> = <em> Math.pow(vpPaso1, plazoVenta);</em> </p>
+  <p><b>Let vpRecuperable </b> = <em> valorRecuperable / exponenciarVR;</em> </p>
+
+  <p><b>Let vpGastos </b> = <em> gastoVenta / exponenciarVR;</em> </p>
+  <p><b>Let vpNeto </b> = <em> (vpRecuperable - vpGastos).toFixed(2);</em> </p>
+  <p><b>Let importeRecuperale </b> = <em> valorAvaluo - gastoVenta;</em> </p>
+  </div>
+
+  </body>
+</html>
